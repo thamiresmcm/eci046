@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/thamiresmcm/eci046#"
+     xml:base="https://github.com/thamiresmcm/eci046"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:eci046="https://github.com/thamiresmcm/eci046#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/thamiresmcm/eci046"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#ensina -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/thamiresmcm/eci046#ensina">
+        <owl:inverseOf rdf:resource="https://github.com/thamiresmcm/eci046#ensinada_por"/>
+        <rdfs:domain rdf:resource="https://github.com/thamiresmcm/eci046#Professor"/>
+        <rdfs:range rdf:resource="https://github.com/thamiresmcm/eci046#Disciplina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#ensinada_por -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/thamiresmcm/eci046#ensinada_por">
+        <rdfs:domain rdf:resource="https://github.com/thamiresmcm/eci046#Disciplina"/>
+        <rdfs:range rdf:resource="https://github.com/thamiresmcm/eci046#Professor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#estuda -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/thamiresmcm/eci046#estuda"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#idade -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/thamiresmcm/eci046#idade"/>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#matricula -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/thamiresmcm/eci046#matricula">
+        <rdfs:domain rdf:resource="https://github.com/thamiresmcm/eci046#Aluno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#nome -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/thamiresmcm/eci046#nome">
+        <rdfs:domain rdf:resource="https://github.com/thamiresmcm/eci046#Disciplina"/>
+        <rdfs:domain rdf:resource="https://github.com/thamiresmcm/eci046#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#sexo -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/thamiresmcm/eci046#sexo"/>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#sobrenome -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/thamiresmcm/eci046#sobrenome">
+        <rdfs:domain rdf:resource="https://github.com/thamiresmcm/eci046#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Aluno -->
+
+    <owl:Class rdf:about="https://github.com/thamiresmcm/eci046#Aluno">
+        <rdfs:subClassOf rdf:resource="https://github.com/thamiresmcm/eci046#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Disciplina -->
+
+    <owl:Class rdf:about="https://github.com/thamiresmcm/eci046#Disciplina"/>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Gestao -->
+
+    <owl:Class rdf:about="https://github.com/thamiresmcm/eci046#Gestao">
+        <rdfs:subClassOf rdf:resource="https://github.com/thamiresmcm/eci046#Disciplina"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Ontologia -->
+
+    <owl:Class rdf:about="https://github.com/thamiresmcm/eci046#Ontologia">
+        <rdfs:subClassOf rdf:resource="https://github.com/thamiresmcm/eci046#Disciplina"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Pessoa -->
+
+    <owl:Class rdf:about="https://github.com/thamiresmcm/eci046#Pessoa"/>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Professor -->
+
+    <owl:Class rdf:about="https://github.com/thamiresmcm/eci046#Professor">
+        <rdfs:subClassOf rdf:resource="https://github.com/thamiresmcm/eci046#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Aluno001 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/thamiresmcm/eci046#Aluno001">
+        <rdf:type rdf:resource="https://github.com/thamiresmcm/eci046#Aluno"/>
+        <matricula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9898</matricula>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria da silva</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/thamiresmcm/eci046#Prof001 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/thamiresmcm/eci046#Prof001">
+        <rdf:type rdf:resource="https://github.com/thamiresmcm/eci046#Professor"/>
+        <matricula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1252</matricula>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joao oliveira</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/thamiresmcm/eci046#Aluno"/>
+            <rdf:Description rdf:about="https://github.com/thamiresmcm/eci046#Gestao"/>
+            <rdf:Description rdf:about="https://github.com/thamiresmcm/eci046#Ontologia"/>
+            <rdf:Description rdf:about="https://github.com/thamiresmcm/eci046#Professor"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
